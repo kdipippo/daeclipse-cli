@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "daeclipse-cli"
-version = "0.1.0"
+version = "0.0.1"
 description = "Reverse-engineered Python CLI for DeviantArt Eclipse functionality"
 readme = "README.md"
 authors = ["Kathryn DiPippo <dipippo.k@gmail.com>"]
@@ -28,6 +28,7 @@ typer = {extras = ["all"], version = "^0.3.2"}
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2"
+mypy = "^0.910"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
