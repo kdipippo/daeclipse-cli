@@ -1,15 +1,10 @@
 # dAEclipse CLI
-[![PyPI](https://img.shields.io/pypi/v/daeclipse)](https://pypi.org/project/daeclipse/) [![PyPI - Downloads](https://img.shields.io/pypi/dm/daeclipse)](https://pypi.org/project/daeclipse/) [![PyPI - License](https://img.shields.io/pypi/l/daeclipse)](https://github.com/Pepper-Wood/daeclipse/blob/main/LICENSE)
+[![PyPI](https://img.shields.io/pypi/v/daeclipse-cli)](https://pypi.org/project/daeclipse-cli/) [![PyPI - Downloads](https://img.shields.io/pypi/dm/daeclipse-cli)](https://pypi.org/project/daeclipse-cli/) [![PyPI - License](https://img.shields.io/pypi/l/daeclipse-cli)](https://github.com/Pepper-Wood/daeclipse-cli/blob/main/LICENSE)
 
-[daeclipse](https://pypi.org/project/daeclipse/) is a reverse-engineered Python library for DeviantArt Eclipse functionality.
+[daeclipse-cli](https://pypi.org/project/daeclipse-cli/) is a handy CLI wrapper around the reverse-engineered [daeclipse](https://github.com/Pepper-Wood/daeclipse) Python library for DeviantArt Eclipse functionality. The purpose is to bundle and present functionality enhancements to aid with dA usability.
 
-This repo also contains a handy CLI to expose and test `daeclipse` capabilities.
-
-```bash
-poetry run daeclipse
 ```
-```
-Usage: cli.py [OPTIONS] COMMAND [ARGS]...
+Usage: daeclipse [OPTIONS] COMMAND [ARGS]...
 
   DeviantArt Eclipse CLI
 
@@ -31,40 +26,35 @@ Commands:
 
 ## Installation
 
-The Python library is available via https://pypi.org/project/daeclipse/
+The Python library is available via https://pypi.org/project/daeclipse-cli/
 
 ```bash
-pip install daeclipse
-```
-
-The CLI is only available by downloading / cloning the repo to your local machine:
-
-```bash
-git clone git@github.com:Pepper-Wood/daeclipse.git
+pip install daeclipse-cli
 ```
 
 ## Usage
 
-```py
-import daeclipse
+Once installed globally, commands can be run by prefixing with `daeclipse`.
+```bash
+daeclipse --help
+```
 
-# Fetches a list of group names the user is a member of.
-# You will need to be logged into DeviantArt and have a chrome page open.
-eclipse = daeclipse.Eclipse()
-groups, has_more, next_offset, total = eclipse.get_groups("Pepper-Wood", 0)
-for group in groups:
-    print(group.username)
+For local development, if you clone the repo locally:
+```bash
+git clone git@github.com:Pepper-Wood/daeclipse.git
+
+poetry run daeclipse --help
 ```
 
 ## Build Status and Checks
 
 CICD is run thorugh GitHub Actions and makes the below checks on the two components of this repository:
 
-| | Python Package | OpenAPI Spec |
-| --- | --- | --- |
-| Lint | ![Python Linter Workflow Status](https://github.com/Pepper-Wood/daeclipse/actions/workflows/linter-python.yml/badge.svg) | ![OpenAPI Linter Workflow Status](https://github.com/Pepper-Wood/daeclipse/actions/workflows/linter-openapi.yml/badge.svg) |
-| Test | Coming Soon... | Coming soon... |
-| Deploy | ![PyPI Package Workflow Status](https://github.com/Pepper-Wood/daeclipse/actions/workflows/pypi.yml/badge.svg) | ![GitHub Pages Workflow Status](https://github.com/Pepper-Wood/daeclipse/actions/workflows/gh-pages.yml/badge.svg) |
+| | Python Package |
+| --- | --- |
+| Lint | ![Python Linter Workflow Status](https://github.com/Pepper-Wood/daeclipse-cli/actions/workflows/linter-python.yml/badge.svg) |
+| Test | Coming Soon... |
+| Deploy | ![PyPI Package Workflow Status](https://github.com/Pepper-Wood/daeclipse-cli/actions/workflows/pypi.yml/badge.svg) |
 
 ## Contributing
 
