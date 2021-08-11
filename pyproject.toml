@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "daeclipse-cli"
+version = "0.1.0"
+description = "Reverse-engineered Python CLI for DeviantArt Eclipse functionality"
+readme = "README.md"
+authors = ["Kathryn DiPippo <dipippo.k@gmail.com>"]
+license = "MIT"
+homepage = "https://kathryndipippo.com/daeclipse-cli/"
+repository = "https://github.com/Pepper-Wood/daeclipse-cli"
+keywords = ["python", "deviantart", "cli"]
+
+[tool.poetry.urls]
+Issues = "https://github.com/Pepper-Wood/daeclipse-cli/issues"
+
+[tool.poetry.dependencies]
+python = ">=3.7,<4.0.0"
+cli-ui = ">=0.14.1,<0.16.0"
+daeclipse = "^0.1.0"
+deviantart = "^0.1.5"
+pick = "^1.0.0"
+progress = "^1.6"
+python-dotenv = "^0.19.0"
+tabulate = "^0.8.9"
+typer = "^0.3.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
