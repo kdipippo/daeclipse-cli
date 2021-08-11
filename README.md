@@ -6,7 +6,7 @@
 This repo also contains a handy CLI to expose and test `daeclipse` capabilities.
 
 ```bash
-python3 cli.py --help
+poetry run daeclipse
 ```
 ```
 Usage: cli.py [OPTIONS] COMMAND [ARGS]...

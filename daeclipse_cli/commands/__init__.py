@@ -1,4 +1,4 @@
-"""daeclipsecli __init__.py."""
+"""commands __init__.py."""
 
 from .add_art_to_groups import add_art_to_groups
 from .hot_tags import hot_tags
