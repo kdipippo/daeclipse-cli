@@ -1,4 +1,6 @@
-# dAEclipse CLI
+# daeclipse-cli
+![daeclipse-cli Project Banner](docs/assets/banner.png "daeclipse-cli Project Banner")
+
 [![PyPI](https://img.shields.io/pypi/v/daeclipse-cli)](https://pypi.org/project/daeclipse-cli/) [![PyPI - Downloads](https://img.shields.io/pypi/dm/daeclipse-cli)](https://pypi.org/project/daeclipse-cli/) [![PyPI - License](https://img.shields.io/pypi/l/daeclipse-cli)](https://github.com/Pepper-Wood/daeclipse-cli/blob/main/LICENSE)
 
 [daeclipse-cli](https://pypi.org/project/daeclipse-cli/) is a handy CLI wrapper around the reverse-engineered [daeclipse](https://github.com/Pepper-Wood/daeclipse) Python library for DeviantArt Eclipse functionality. The purpose is to bundle and present functionality enhancements to aid with dA usability.
