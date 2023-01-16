@@ -27,7 +27,7 @@ tabulate = "^0.8.9"
 typer = {extras = ["all"], version = "^0.3.2"}
 
 [tool.poetry.dev-dependencies]
-pytest = "^6.2"
+pytest = "^7.2"
 mypy = "^0.910"
 
 [build-system]
